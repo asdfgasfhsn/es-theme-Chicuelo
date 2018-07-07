@@ -222,4 +222,79 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 </view>
 </feature>
 
+<view name="detailed, video">
+ <image name="logo2" extra="true">
+	<origin>0 0</origin>
+	<pos>1 1</pos>
+ </image>
+ <text name="longdescription" extra="true">
+	<origin>0 0</origin>
+	<pos>1 1</pos>
+ </text>
+	
+ <text name="md_lbl_genre, md_genre, md_lbl_releasedate, md_lbl_developer, md_developer, md_lbl_players, md_players, md_lbl_rating">
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<forceUppercase>0</forceUppercase>
+	<fontSize>0.02</fontSize>
+	<color>818181</color>
+	<alignment>left</alignment>
+	<size>0.11 0.02</size>
+ </text>
+ <text name="md_lbl_genre">
+	<origin>0.5 0.5</origin>
+	<pos>0.536 0.761</pos>
+ </text>
+ <text name="md_genre">
+	<origin>0.5 0.5</origin>
+	<pos>0.59 0.761</pos>
+ </text>
+ <text name="md_lbl_releasedate">
+	<origin>0.5 0.5</origin>
+	<pos>0.536 0.791</pos>
+ </text>
+ <datetime name="md_releasedate">
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<fontSize>0.02</fontSize>
+	<color>818181</color>
+	<pos>0.535 0.781</pos>
+	<size>0.11 0.02</size>
+ </datetime>
+ <text name="md_lbl_developer">
+	<origin>0.5 0.5</origin>
+	<pos>0.536 0.821</pos>
+ </text>
+ <text name="md_developer">
+	<origin>0.5 0.5</origin>
+	<pos>0.59 0.821</pos>
+ </text>
+ <text name="md_lbl_players">
+	<origin>0.5 0.5</origin>
+	<pos>0.536 0.851</pos>
+ </text>
+ <text name="md_players">
+	<origin>0.5 0.5</origin>
+	<pos>0.59 0.851</pos>
+  </text>
+ <text name="md_lbl_rating">
+	<origin>0.5 0.5</origin>
+	<pos>0.536 0.881</pos>
+ </text>
+ <rating name="md_rating">
+	<origin>0.5 0.5</origin>
+	<pos>0.59 0.881</pos>
+	<size>0.11 0.02</size>
+	<color>818181</color>
+ </rating>
+ 
+ <text name="md_description">
+	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+	<forceUppercase>0</forceUppercase>
+	<fontSize>0.02</fontSize>
+	<color>818181</color>
+	<origin>0.5 0.5</origin>
+	<pos>0.789 0.821</pos>
+	<size>0.25 0.16</size>
+ </text>
+</view>
+	
 </theme>
