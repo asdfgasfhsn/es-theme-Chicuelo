@@ -23,10 +23,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
 <theme>
 <formatVersion>4</formatVersion>
- 
-
 <!-- System View -->
-
 <feature supported="carousel">
 <view name="system">
  <image name="background" extra="true">
@@ -35,7 +32,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 	<size>1 1</size>
 	<pos>0 0</pos>
  </image>
- 
+
  <text name="shortdescription" extra="true">
 	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
 	<alignment>center</alignment>
@@ -58,7 +55,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 	<color>00000000</color>
 	<origin>0.5 0.5</origin>
 	<pos>0.232 0.415</pos>
-	<size>1 .4</size> 
+	<size>1 .4</size>
 	<logoScale>0.7</logoScale>
 	<logoSize>0.3 0.2</logoSize>
 	<maxLogoCount>1</maxLogoCount>
@@ -74,7 +71,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 	<size>0.980 0.050</size>
 	<fontSize>0.025</fontSize>
  </text>
- 
+
  <text name="longdescription" extra="true">
 	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
 	<alignment>center</alignment>
@@ -85,7 +82,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 	<pos>0.232 0.58</pos>
 	<size>0.20 0.1</size>
  </text>
- 
+
 <!--
 
  <image name="indicator" extra="true">
@@ -105,7 +102,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 	<pos>0.678 0.5</pos>
 	<size>0.535 0.85</size>
   </image>
- 
+
  <image name="controller" extra="true">
 	<path>./_assets/controllers/${system.theme}.png</path>
 	<tile>false</tile>
@@ -121,7 +118,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 	<textColor>23232f</textColor>
     <iconColor>23232f</iconColor>
  </helpsystem>
-  
+
 </view>
 </feature>
 
@@ -131,7 +128,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
 <!-- Gamelist View -->
 
-<view name="basic, detailed, video, grid">
+<view name="basic, detailed, video">
 
  <image name="background" extra="true">
 	<tile>false</tile>
@@ -147,11 +144,11 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 	<pos>0.553 0.821</pos>
 	<maxSize>0.16 0.16</maxSize>
  </image>
- 
+
  <text name="shortdescription" extra="true">
 	<pos>1 1</pos>
  </text>
- 
+
  <text name="longdescription" extra="true">
 	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
 	<forceUppercase>0</forceUppercase>
@@ -161,7 +158,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 	<pos>0.789 0.821</pos>
 	<size>0.25 0.2</size>
  </text>
- 
+
 <textlist name="gamelist">
 	<selectorColor>ffffff</selectorColor>
 	<selectorImagePath>./_assets/icon.png</selectorImagePath>
@@ -187,7 +184,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
     <iconColor>23232f</iconColor>
 </helpsystem>
 
-<!-- Hide Unused Elements -->	
+<!-- Hide Unused Elements -->
 <text name="md_description, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
 	<pos>1 1</pos>
 </text>
@@ -200,7 +197,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
 </view>
 
-<view name="basic, detailed, grid">
+<view name="basic, detailed">
  <image name="md_image">
 	<origin>0.5 0.5</origin>
 	<pos>0.6925 0.3915</pos>
@@ -221,5 +218,161 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
  </video>
 </view>
 </feature>
+
+<view name="grid">
+
+  <image name="background" extra="true">
+ 	<tile>false</tile>
+ 	<path>./_assets/system-global-bg.jpg</path>
+ 	<size>1 1</size>
+ 	<pos>0 0</pos>
+  </image>
+
+  <text name="shortdescription" extra="true">
+ 	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+ 	<alignment>center</alignment>
+ 	<forceUppercase>1</forceUppercase>
+ 	<fontSize>0.03</fontSize>
+ 	<color>818181</color>
+ 	<origin>0.5 0.5</origin>
+ 	<pos>0.232 0.25</pos>
+ 	<size>0.32 0.1</size>
+  </text>
+
+  <image name="logo">
+ 	<path>./_assets/logos/${system.theme}.svg</path>
+ 	<color>4f5159</color>
+  <!-- <color>00000000</color> -->
+	<origin>0.5 0.5</origin>
+	<pos>0.232 0.415</pos>
+	<!-- <size>1 .4</size> -->
+  </image>
+
+  <carousel name="systemcarousel">
+ 	<type>vertical</type>
+ 	<color>00000000</color>
+ 	<origin>0.5 0.5</origin>
+ 	<pos>0.232 0.415</pos>
+ 	<size>1 .4</size>
+ 	<logoScale>0.7</logoScale>
+ 	<logoSize>0.3 0.2</logoSize>
+ 	<maxLogoCount>1</maxLogoCount>
+  </carousel>
+
+  <text name="systemInfo">
+ 	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+ 	<alignment>center</alignment>
+ 	<backgroundColor>00000000</backgroundColor>
+ 	<color>4f5159</color>
+ 	<origin>0.5 0.5</origin>
+ 	<pos>0.232 0.77</pos>
+ 	<size>0.980 0.050</size>
+ 	<fontSize>0.025</fontSize>
+  </text>
+
+  <text name="longdescription" extra="true">
+ 	<fontPath>./_assets/Roboto-Medium.ttf</fontPath>
+ 	<alignment>center</alignment>
+ 	<forceUppercase>0</forceUppercase>
+ 	<fontSize>0.02</fontSize>
+ 	<color>818181</color>
+ 	<origin>0.5 0.5</origin>
+ 	<pos>0.232 0.58</pos>
+ 	<size>0.20 0.1</size>
+  </text>
+
+  <image name="character" extra="true">
+ 	<path>./_assets/characters/${system.theme}.jpg</path>
+ 	<tile>false</tile>
+ 	<origin>0.5 0.5</origin>
+ 	<pos>0.678 0.5</pos>
+ 	<size>0.535 0.85</size>
+   </image>
+
+  <image name="controller" extra="true">
+ 	<path>./_assets/controllers/${system.theme}.png</path>
+ 	<tile>false</tile>
+ 	<origin>1 1</origin>
+ 	<pos>0.9785 0.975</pos>
+ 	<size>0.275 0.4</size>
+   </image>
+
+  <imagegrid name="gamegrid">
+    <pos>0.35 0.35</pos>
+    <size>0.65 0.5</size>
+    <margin>0.03 0.04</margin>
+  </imagegrid>
+
+  <gridtile name="default">
+    <size>0.12875 0.23</size>
+    <!-- <backgroundImage>./assets/selector.png</backgroundImage> -->
+    <backgroundColor>00000000</backgroundColor>
+  </gridtile>
+
+  <gridtile name="selected">
+    <size>0.12875 0.23</size>
+    <backgroundColor>ffffff90</backgroundColor>
+  </gridtile>
+
+  <text name="md_title">
+    <color>ffffff</color>
+    <pos>0.02 0.179</pos>
+    <fontSize>0.03</fontSize>
+  </text>
+
+  <text name="md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+    <color>ffffff</color>
+    <forceUppercase>0</forceUppercase>
+    <fontSize>0.03</fontSize>
+    <size>0.01 0.01</size>
+    <pos>1 1</pos>
+    <pos>1 1</pos>
+  </text>
+
+  <text name="md_rating, md_developer, md_publisher, md_genre, md_players, md_playcount, md_releasedate">
+    <color>ffffff</color>
+    <forceUppercase>0</forceUppercase>
+    <fontSize>0.03</fontSize>
+    <size>0.01 0.01</size>
+  </text>
+
+  <text name="md_description">
+    <color>ffffff</color>
+    <forceUppercase>0</forceUppercase>
+    <fontSize>0.03</fontSize>
+    <size>0.01 0.01</size>
+    <pos>1 1</pos>
+  </text>
+
+  <text name="md_lbl_rating">
+    <color>ffffff</color>
+    <forceUppercase>0</forceUppercase>
+    <fontSize>0.03</fontSize>
+    <size>0.01 0.01</size>
+    <pos>1 1</pos>
+  </text>
+
+  <text name="md_lbl_releasedate">
+    <size>0.01 0.01</size>
+    <pos>1 1</pos>
+  </text>
+
+  <datetime name="md_releasedate">
+    <size>0.01 0.01</size>
+    <pos>1 1</pos>
+  </datetime>
+
+  <text name="md_lbl_players">
+    <size>0.01 0.01</size>
+    <pos>1 1</pos>
+  </text>
+
+  <text name="md_players">
+    <size>0.01 0.01</size>
+    <pos>1 1</pos>
+  </text>
+
+</view>
+
 
 </theme>
